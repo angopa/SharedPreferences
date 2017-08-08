@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         friends.add("Monica");
         friends.add("Chandler");
 
+
         try {
 
             sharedPreferences.edit().putString("friends", ObjectSerializer.serialize(friends)).apply();
